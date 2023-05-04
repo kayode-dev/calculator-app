@@ -131,6 +131,9 @@ body {
     text-align: end;
     align-content: center;
     padding: 20px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    scroll-behavior: smooth;
 }
 
 .input-buttons{
