@@ -6,68 +6,70 @@
   font-family: "League Spartan", sans-serif;
 }
 
-:root{
-    --background-color: hsl(222, 26%, 31%);
-    --main-text-color:white;
-    --toggle-bg: hsl(223, 31%, 20%);
-    --toogle-btn-color: hsl(6, 63%, 50%);
-    --toogle-position: start;
-    --screen-bg: hsl(224, 36%, 15%);
-    --button-section-bg: hsl(223, 31%, 20%);
-    --number-btn-text-color: hsl(221, 14%, 31%);
-    --button-bg: white;
-    --button-shadow: grey;
-    --delete-btn-bg: hsl(225, 21%, 49%);
-    --delete-text-color: white;
-    --delete-shadow: hsl(224, 28%, 35%);
-    --submit-btn-bg: hsl(6, 63%, 50%);
-    --submit-text-color: white;
-    --submit-shadow: hsl(6, 70%, 34%);
-
+:root {
+  --background-color: hsl(222, 26%, 31%);
+  --main-text-color: white;
+  --toggle-bg: hsl(223, 31%, 20%);
+  --toogle-btn-color: hsl(6, 63%, 50%);
+  --toogle-position: start;
+  --screen-bg: hsl(224, 36%, 15%);
+  --button-section-bg: hsl(223, 31%, 20%);
+  --number-btn-text-color: hsl(221, 14%, 31%);
+  --button-bg: white;
+  --button-shadow: grey;
+  --delete-btn-bg: hsl(225, 21%, 49%);
+  --delete-text-color: white;
+  --delete-shadow: hsl(224, 28%, 35%);
+  --submit-btn-bg: hsl(6, 63%, 50%);
+  --submit-text-color: white;
+  --submit-shadow: hsl(6, 70%, 34%);
 }
 
-.theme-2{
-    --background-color: hsl(0, 0%, 90%);
-    --main-text-color:hsl(60, 10%, 19%);
-    --toggle-bg: hsl(0, 5%, 81%);
-    --toogle-btn-color: hsl(25, 98%, 40%);
-    --toogle-position: center;
-    --screen-bg: hsl(0, 0%, 93%);
-    --button-section-bg: hsl(0, 5%, 81%);
-    --number-btn-text-color: hsl(221, 14%, 31%);
-    --button-bg: hsl(45, 7%, 89%);
-    --button-shadow:  hsl(35, 11%, 61%);
-    --delete-btn-bg: hsl(185, 42%, 37%);
-    --delete-text-color: white;
-    --delete-shadow: hsl(185, 58%, 25%);
-    --submit-btn-bg: hsl(25, 98%, 40%);
-    --submit-text-color: white;
-    --submit-shadow: hsl(25, 99%, 27%);
+.theme-2 {
+  --background-color: hsl(0, 0%, 90%);
+  --main-text-color: hsl(60, 10%, 19%);
+  --toggle-bg: hsl(0, 5%, 81%);
+  --toogle-btn-color: hsl(25, 98%, 40%);
+  --toogle-position: center;
+  --screen-bg: hsl(0, 0%, 93%);
+  --button-section-bg: hsl(0, 5%, 81%);
+  --number-btn-text-color: hsl(221, 14%, 31%);
+  --button-bg: hsl(45, 7%, 89%);
+  --button-shadow: hsl(35, 11%, 61%);
+  --delete-btn-bg: hsl(185, 42%, 37%);
+  --delete-text-color: white;
+  --delete-shadow: hsl(185, 58%, 25%);
+  --submit-btn-bg: hsl(25, 98%, 40%);
+  --submit-text-color: white;
+  --submit-shadow: hsl(25, 99%, 27%);
 }
 
-.theme-3{
-    --background-color:  hsl(268, 75%, 9%);
-    --main-text-color:hsl(52, 100%, 62%);
-    --toggle-bg: hsl(268, 71%, 12%);
-    --toogle-btn-color: hsl(176, 100%, 44%);
-    --toogle-position: end;
-    --screen-bg: hsl(268, 71%, 12%);
-    --button-section-bg: hsl(268, 71%, 12%);
-    --number-btn-text-color: hsl(52, 100%, 62%);
-    --button-bg: hsl(268, 47%, 21%);
-    --button-shadow:hsl(290, 70%, 36%);
-    --delete-btn-bg: hsl(281, 89%, 26%);
-    --delete-text-color: white;
-    --delete-shadow: hsl(285, 91%, 52%);
-    --submit-btn-bg: hsl(176, 100%, 44%);
-    --submit-text-color: hsl(198, 20%, 13%);
-    --submit-shadow: hsl(177, 92%, 70%);
+.theme-3 {
+  --background-color: hsl(268, 75%, 9%);
+  --main-text-color: hsl(52, 100%, 62%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --toogle-btn-color: hsl(176, 100%, 44%);
+  --toogle-position: end;
+  --screen-bg: hsl(268, 71%, 12%);
+  --button-section-bg: hsl(268, 71%, 12%);
+  --number-btn-text-color: hsl(52, 100%, 62%);
+  --button-bg: hsl(268, 47%, 21%);
+  --button-shadow: hsl(290, 70%, 36%);
+  --delete-btn-bg: hsl(281, 89%, 26%);
+  --delete-text-color: white;
+  --delete-shadow: hsl(285, 91%, 52%);
+  --submit-btn-bg: hsl(176, 100%, 44%);
+  --submit-text-color: hsl(198, 20%, 13%);
+  --submit-shadow: hsl(177, 92%, 70%);
 }
 
 body {
   background-color: var(--background-color);
   color: var(--main-text-color);
   transition: 0.2s linear;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .calculator {
@@ -93,134 +95,126 @@ body {
   justify-content: space-around;
 }
 
-.theme-section p{
-    padding-bottom: 2px;
-    align-self: flex-end;
-    margin-right: 10px;
+.theme-section p {
+  padding-bottom: 2px;
+  align-self: flex-end;
+  margin-right: 10px;
 }
 
 .toogle {
   height: 20px;
   width: 60px;
   border-radius: 10px;
-  background-color:var(--toggle-bg);
+  background-color: var(--toggle-bg);
   padding: 2px;
   display: flex;
   justify-content: var(--toogle-position);
 }
 
-.toogle div{
-    height: 15px;
-    width:15px;
-    border-radius: 50%;
-    background-color: var(--toogle-btn-color);
+.toogle div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--toogle-btn-color);
 }
 .theme-mode {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
-.screen{
-    height: 100px;
-    border-radius: 10px;
-    border:none;
-    margin-bottom: 20px;
-    background-color:var(--screen-bg);
-    font-size: 4rem;
-    color: var(--main-text-color);
-    text-align: end;
-    align-content: center;
-    padding: 20px;
-    overflow: overlay;
-   
+.screen {
+  height: 100px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: var(--screen-bg);
+  font-size: 4rem;
+  color: var(--main-text-color);
+  text-align: end;
+  align-content: center;
+  padding: 20px;
+  overflow: overlay;
 }
 
-.input-buttons{
-    background-color: var(--button-section-bg);
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 22%;
-    justify-content: space-evenly;
-    padding: 10px;
-    border-radius: 10px;
+.input-buttons {
+  background-color: var(--button-section-bg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 22%;
+  justify-content: space-evenly;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-button{
-    width: 20%;
-    height: 50px;
-    margin: 10px;
-    border-radius: 10px;
-    border:none;
-    border-bottom: 3px solid var(--button-shadow);
-    background-color: var(--button-bg);
-    color: var(--number-btn-text-color);
-    font-weight: 700;
-    font-size:x-large;
+button {
+  width: 20%;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 3px solid var(--button-shadow);
+  background-color: var(--button-bg);
+  color: var(--number-btn-text-color);
+  font-weight: 700;
+  font-size: x-large;
 }
-button:hover{
+button:hover {
   filter: brightness(1.4);
 }
-.delete{
-    background-color: var(--delete-btn-bg);
-    color: var(--delete-text-color);
-    border-bottom: 3px solid var(--delete-shadow);
+.delete {
+  background-color: var(--delete-btn-bg);
+  color: var(--delete-text-color);
+  border-bottom: 3px solid var(--delete-shadow);
 }
 
-.action-boy{
-    width: 45%;
+.action-boy {
+  width: 45%;
 }
 
-.submit{
-    background-color: var(--submit-btn-bg);
-    border-bottom: 3px solid var(--submit-shadow);
-    color: var(--submit-text-color);
+.submit {
+  background-color: var(--submit-btn-bg);
+  border-bottom: 3px solid var(--submit-shadow);
+  color: var(--submit-text-color);
 }
 
-@media screen and (max-width: 1115px){
-
-  .calculator{
+@media screen and (max-width: 1115px) {
+  .calculator {
     max-width: 60%;
   }
-  
-  button{
-    width: 18%
+
+  button {
+    width: 18%;
   }
 
-  .action-boy{
+  .action-boy {
     width: 40%;
   }
- 
 }
 
-@media screen and (max-width: 600px){
-
-  .calculator{
+@media screen and (max-width: 600px) {
+  .calculator {
     max-width: 80%;
   }
-  
-  button{
-    width: 18%
+
+  button {
+    width: 18%;
   }
 
-  .action-boy{
+  .action-boy {
     width: 40%;
   }
- 
 }
 
-
-@media screen and (max-width: 466px){
-
-  .calculator{
+@media screen and (max-width: 466px) {
+  .calculator {
     max-width: 90%;
   }
-  
-  button{
-    width: 15%
+
+  button {
+    width: 15%;
   }
 
-  .action-boy{
+  .action-boy {
     width: 40%;
   }
 }
-
