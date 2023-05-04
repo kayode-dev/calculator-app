@@ -206,6 +206,10 @@ button:hover {
 }
 
 @media screen and (max-width: 466px) {
+
+  body{
+    place-items: center;
+  }
   .calculator {
     max-width: 90%;
   }
